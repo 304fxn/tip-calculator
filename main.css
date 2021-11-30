@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f9c9f;
+  background: #c5e4e7;
+}
+
+#container {
+  background: white;
+  border-radius: 15px;
+  max-width: 300px;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+#container input[type="number"] {
+  border: 0;
+  outline: none;
+  background-color: #f4fafa;
+  padding: 0.55rem;
+  height: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.2rem 0 2rem;
+  text-align: end;
+  -moz-appearance: textfield;
+}
+
+#container input::-webkit-outer-spin-button,
+#container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#container .enter-sum {
+  display: flex;
+  flex-direction: column;
+}
+
+#container .select-tip button {
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #00494d;
+  height: 45px;
+  width: 135px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+#container .select-tip button:hover {
+  cursor: pointer;
+  color: #00494d;
+  background: #26c0ab;
+}
+
+#container .select-tip button:focus {
+  color: #00494d;
+  background: #26c0ab;
+}
+
+#container .number-of-people {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0.2rem;
+}
+
+#container .calcul-total {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #00494d;
+}
+
+#container .calcul-total .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#container .calcul-total .total .total-content p:nth-child(1) {
+  color: white;
+}
+
+#container .calcul-total .total .total-content p:nth-child(2) {
+  font-size: 0.8rem;
+}
+
+#container .calcul-total .total .tip-amount-person__dollars {
+  font-size: 2rem;
+  color: #26c0ab;
+}
+
+#container .calcul-total .total .total-amount-person__dollars {
+  font-size: 2rem;
+  color: #26c0ab;
+}
+
+#container .calcul-total #reset {
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  color: #00494d;
+  background: #26c0ab;
+  font-weight: bold;
+  height: 45px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+#container .calcul-total #reset:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
